@@ -1,0 +1,1022 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*For whole body styling*/
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 99%;
+    height: 550px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f5f5f5;
+}
+/*For TopBar whole div styling*/
+.social-logos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    position: sticky;
+    
+     
+}
+ /*For social websites logos styling*/
+.logos{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(243, 232, 232);
+    border-radius: 60%;
+    transition: background-color 0.3s ease-in-out;
+ cursor: pointer;
+     display: inline;
+     margin: 2px;
+        padding: 2px;
+        position: relative;
+        left:22px ;
+}
+/* For contact details styling*/
+.logos-left{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+ cursor: pointer;
+     display: inline;
+     position: relative;
+     left: 45%;
+     margin: 3px;
+        padding: 2px;
+    
+}
+/*For contact details for small screens*/
+@media screen and  (max-width: 300px) {
+  body {
+font-size: x-small;
+   }
+   h1{
+      font-size: small;
+   }
+    .logos-left{
+        display: none;
+   }
+}
+@media  screen and (max-width: 600px) {
+   body {
+      font-size: x-small;
+         }
+         h1{
+            font-size: small;
+         }
+    .logos-left{
+         display: none;
+    }
+}
+@media screen and (max-width: 900px){
+   body {
+      font-size: x-small;
+         }
+         h1{
+            font-size: small;
+         }
+    .logos-left{
+         position: absolute;
+         left: 45px;
+       
+   }
+}
+
+/*For button call me back styling*/
+.btn-left{
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+        display: inline;
+        font-size: small;
+        position: relative;
+        left: 46%;
+        background-color:rgb(152, 231, 65) ;
+        margin: 3px;
+        padding: 4px;
+        text-shadow: 3px;
+        border-radius: 4px;
+        color: black;
+        
+}
+/*For button for small screens*/
+@media screen and (max-width: 300px){
+    .btn-left{
+position: absolute;
+left: -220px;
+font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-left{
+        position:absolute;
+          top: 2px;
+          left: -22px;
+          font-size: small;
+
+    }
+}
+@media screen and (max-width: 900px){
+    .btn-left{
+         position: relative;
+          top: 0px;
+          left: 15px;
+          font-size: small;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .btn-left{
+        position: relative;
+         top: 0px;
+         left:5px;
+         font-size: small;
+   }
+
+
+}
+
+
+/*For button call me back hover and active styling*/
+.btn-left:hover , .btn-left:active{
+    background-color: rgb(152, 231, 65); 
+     color: white;
+     text-shadow: 1px;
+}
+
+/*For whole navbar styling*/
+.navbar{
+   
+
+}
+/*For pana cloud img styling*/
+.pc-logo{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 30px;
+    margin: 2px;
+    padding: 2px;
+}
+/*for links styling*/
+.links{
+     position:  relative;
+     left: 220px;
+     bottom: 30px;
+    margin: 12px;
+    padding: 2px;
+
+}
+/*for links hover and active styling*/
+.links:hover, .links:active{
+     font-size: large;
+     text-shadow: 1px;
+     text-decoration: underline goldenrod;
+     text-decoration-thickness: 3px;
+}
+/*for links for small screens styling*/
+@media screen and (max-width: 600px) {
+    .links{
+         position:  relative;
+         left: 10px;
+         bottom: 30px;
+        margin: 12px;
+        padding: 2px;
+        display: none;
+    }
+}
+ /*For whole hero section*/
+ .hero-section{
+    background-color: rgb(21, 239, 21);
+    width:  99% ;
+     height: 400px;
+    margin: 2px;
+    padding: 12px;
+    text-align: center;
+    background: linear-gradient(to bottom ,  rgb(21, 239, 21) ,goldenrod);
+    
+    box-shadow: 3px 3px 4px rgb(244, 221, 163)
+ }
+ /*For hero section heading styling*/
+ .hero-heading{
+    color: white;
+    font-size: 5rem;
+    font: bolder;
+    margin: 30px;
+    padding: 2px;
+
+
+ }
+ /*For hero section paragraph styling*/
+ .hero-para{
+    color: white;
+     font-size: 1.2rem;
+    font: bold;
+    margin: 2px;
+    padding: 2px;
+    width:  600px;
+     position: relative;
+     top: -25px;
+     left: 50%;
+     transform: translateX(-50%);
+
+ }
+ /*For hero section button styling*/
+ .hero-btn{
+ text-align: center;
+ background-color: goldenrod;
+ font-size: 1rem;
+ margin: 2px;
+ padding: 10px 15px;
+  border-radius: 9px;
+  cursor: pointer;
+   
+ }
+ /*For hero section button hover and active styling*/
+ .hero-btn:hover, .hero-btn:active{
+      color: white;
+      
+     text-shadow: 1px;
+ }
+ /*For whole second section*/
+ .second-page{
+     background-color: white;
+    width:  99% ;
+    height: 350px;
+    margin: 2px;
+    padding: 2px;
+    
+    box-shadow: 3px 3px 4px  rgba(76, 75, 75, 0.4)
+     
+ }
+ /*For whole images section styling*/
+ .images-section{
+    
+ display: flex;
+
+
+ }
+
+
+ /*For our advantage section heading styling*/
+ .our-advSection{
+     text-align: center;
+      
+     padding: 25px;
+     
+     
+ }
+ /*For our word styling*/
+ .our{
+    padding: 3px;
+    font: bolder;
+    font-size: 2.8rem;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+ /*For advantage word styling*/
+ .adv{
+    padding: 3px;
+    font: bolder;
+    font-size: 2.8rem;
+    color: green ;
+ }
+ /*For our paragraph styling*/
+ .our-para{
+ 
+    color: rgb(158, 157, 157);
+    width: 455px;
+    height: 155px;
+     position: relative;
+     left: 30%;
+     top: -12px;
+     text-align: center;
+ }
+ /*For whole Bulb */
+ .bulb{
+width: 155px;
+height: 155px;
+margin: 2px;
+    padding: 2px;
+     
+ position: relative;
+ left: 6%;
+ bottom: 100px;
+
+ }
+ /*For img bulb styling*/
+ .img-bulb{
+   
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    padding: 2px;
+    
+    position: relative;
+     left: 28%;
+     
+     
+
+ }
+ /*For  bulb heading styling*/
+ .bulb-heading{
+     
+    text-align: center;
+ }
+ /*For  bulb para*/
+ .bulb-para{
+    color: rgb(158, 157, 157);
+    text-align: center;
+
+ }
+ /*For whole thumbs section*/
+ .thumbs{
+    width: 155px;
+height: 155px;
+margin: 2px;
+    padding: 2px;
+    position: relative;
+    right:  -10%; 
+bottom: 100px;
+ }
+ /*For thumbs image*/
+ .img-thumbs{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+     right: -28%;
+      
+    
+
+
+ }
+ /*For thumbs heading*/
+ .thumbs-heading{
+    text-align: center;
+ }
+ /*For thumbs  para*/
+ .thumbs-para{
+    color: rgb(158, 157, 157);
+    text-align: center;
+ }
+ /*For clock whole section*/
+ .clock{
+    width: 155px;
+    height: 155px;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    right:  -15%; 
+    bottom: 100px;
+
+ }
+ /*For clock image*/
+ .clock-img{
+    width: 60px;
+    height: 60px;
+   
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+     right: -29%;
+      
+ }
+/*For clock heading*/
+.clock-heading{
+    text-align: center;
+}
+ /*For clock para*/
+ .clock-para{
+    color: rgb(158, 157, 157);
+    text-align: center;
+ }
+ /*For whole user section*/
+ .user{
+    width: 155px;
+    height: 155px;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    right:  -20%; 
+    bottom: 100px;
+ }
+ /*For user image*/
+ .user-img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+     right: -28%;
+      
+ }
+ /*For user heading*/
+ .user-heading{
+    text-align: center;
+ }
+ /*For user para*/
+ .user-para{
+    color: rgb(158, 157, 157);
+    text-align: center;
+ }
+ /*For whole messages section*/
+ .message{
+    width: 155px;
+    height: 155px;
+    margin: 2px;
+    padding: 2px;
+     position: relative;
+     right:  -25%; 
+     bottom: 100px;
+    
+ }
+ /*For messages image*/
+ .message-img{
+    width: 60px;
+    height: 60px;
+     position: relative;
+     right: -28%;
+      
+ }
+ /*For messages heading*/
+ .message-heading{
+    text-align: center;
+ }
+ /*For messages para*/
+ .message-para{
+    color: rgb(158, 157, 157);
+    text-align: center;
+ }
+ /*For Whole About section*/
+ .about{
+    width: 99% ;
+    height: 380px;
+    margin: 2px;
+    padding: 12px;
+    text-align: center;
+    background-color: white;
+     
+     
+ }
+ /*For about heading*/
+ .abt{
+     
+    font-size: 2.8rem;
+    padding: 2px;
+    margin: 2px;
+     
+     
+ }
+ .us{
+     
+    font-size: 2.8rem;
+    color: green;
+    padding: 2px;
+    margin: 2px;
+
+     
+ }
+ 
+ /*For about paragraph*/
+ .about-para{
+     position: relative;
+      right:-1%;
+       bottom: 300px;
+    font: bold;
+    margin: 2px;
+    padding: 12px;
+    width: 350px;
+    
+ }
+ /*For about image*/
+ .about-img{
+    width: 500px;
+    height: 300px;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    right: -55%;
+    bottom: 20px;
+    
+     
+ }
+ /*For about button*/
+ .about-btn{
+    background-color: goldenrod;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    position: relative;
+    right: 35%;
+    bottom: 300px;
+     
+     
+ }
+ /*For about button hover and active styling*/
+ .about-btn:hover,.about-btn:active{
+     color: white;
+     text-shadow: 1px;
+ }
+ /*For OUR SERVICES*/
+ .our-services{
+    text-align: center;
+    background-color: white;
+   }
+/*For our services heading*/
+.ser{
+   padding: 3px;
+   font: bolder;
+   font-size: 2.8rem;
+   color: green ;
+}
+/*For our services para*/
+.our-para{
+   color: rgb(158, 157, 157);
+    text-align: center;
+}
+
+
+.row{
+    box-sizing: border-box;
+    margin: 0, -5px;
+    
+    
+ }
+ 
+ 
+ 
+ /* Float four columns side by side */
+ .column {
+   float: left;
+   width: 25%;
+   height: 105px;
+   padding: 0 10px;
+ }
+ 
+ 
+  
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Responsive columns */
+ @media screen and (max-width: 600px) {
+   .column {
+     width: 100%;
+     display: block;
+     margin-bottom: 20px;
+   }
+ }
+ 
+ /* Style the counter cards */
+ .card {
+   box-shadow: 2px 2px 2px 2px  rgb(221, 209, 209);
+   padding: 16px;
+   text-align: center;
+   background-color: #f1f1f1;
+   height: 150px;
+   position: relative;
+   top: -72px;
+}
+/*FOR CARD PARA*/
+.card-para{ 
+   text-align: center;
+   color: rgb(158, 157, 157);
+   
+    
+}
+/*For card link*/
+.card-link{
+color: rgb(152, 231, 65);
+text-decoration: underline 2px;
+}
+/*For whole our portfolio*/
+
+.portfolio{
+    text-align: center;
+     
+    width:  99% ;
+    height: 350px;
+    margin: 2px;
+    padding: 2px;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+    background-color: black;
+
+}
+.our-portfolio{
+    text-align: center;
+   position: relative;
+    bottom: -25px;
+
+   }
+   /*For our portfolio heading*/
+   .port{
+       padding: 3px;
+       font: bolder;
+       font-size: 2.8rem;
+        color: green;
+   }
+   /*For our heading*/
+  .ours{
+   padding: 3px;
+       font: bolder;
+       font-size: 2.8rem;
+        color: white;
+
+   
+  }
+   /*For our portfolio Links*/
+   .our-links{
+      position:  relative;
+      
+      bottom: 50px;
+     margin: 12px;
+     padding: 2px;
+     color: white;
+   }
+   .our-links:hover, .our-links:active{
+      font-size: large;
+      text-shadow: 1px;
+      text-decoration: underline goldenrod;
+      text-decoration-thickness: 3px;
+ }
+ /*For LOGO section*/
+ .logo-section{
+    text-align: center;
+    background-color: rgb(73, 72, 72);
+    width: 99% ;
+    height: 450px;
+    margin: 2px;
+    padding: 2px;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+    color: white;
+ }
+ /*For logo Links*/
+ .logo-links{
+      position:  relative;
+      bottom: 0px;
+      margin: 12px;
+      padding: 2px;
+      color: white;
+ }
+ .logo-links:hover, .logo-links:active{
+      font-size: large;
+      text-shadow: 1px;
+      text-decoration: underline goldenrod;
+      text-decoration-thickness: 3px;
+ }
+  
+  
+   
+ /*For logo images*/
+ .logo-img{
+    width: 200px;
+    height: 180px;
+  
+    position: relative;
+     bottom: -40px;
+     right:  -180px;
+   }
+   .logo1-div{
+     
+   display: flex;
+ }
+ .logos-img{
+   width: 200px;
+   height: 180px;
+   
+   position: relative;
+    bottom: -40px;
+    right:  -180px;
+    
+ }
+ .logo2-div{
+   display: flex;
+ }
+
+ /*For Our process*/
+ .our-process{
+    text-align: center;
+    background-color: white;
+    width:  99% ;
+    height: 340px;
+    margin: 2px;
+    padding: 2px;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+     
+ }
+ /*For our process para*/
+ .our-para{
+   color: rgb(158, 157, 157);
+    text-align: center;
+ }
+ /*For our process all div*/
+ .phone-div, .consult-div,.planning-div,.work-div,.correct-div,.deliver-div  {
+   width: 155px;
+height: 155px;
+margin: 5px;
+    padding: 3px;
+ position: relative;
+ left: 6%;
+ bottom: 85px;
+ }
+ /*For our process all images*/
+ .phone-img,.consult-img,.planning-img,.work-img,.correct-img,.deliver-img{
+   width: 60px;
+    height: 60px;
+    margin: 2px;
+    padding: 2px; 
+    position: relative;
+     left: 30%;
+ }
+ /*For our process all headings*/
+ .phone-para ,.consult-para ,.planning-para,.work-para,.correct-para,.deliver-para {
+   text-align: center;
+   color: rgb(158, 157, 157);
+    
+
+ }
+ /*For Reviews section*/
+ /* Create four equal columns that floats next to each other */
+ .review{
+   text-align: center;
+   background-color: white;
+   width:  99% ;
+   height: 450px;
+   margin: 2px;
+   padding: 2px;
+  
+ 
+ }
+ 
+ .peoples-review{
+
+      
+    
+}
+.row1{
+     
+     position: relative;
+     bottom: 120px;
+    
+ 
+}
+
+ .column1{
+     
+   box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+ 
+   float:left;
+   width: 50%;
+ }
+  
+ 
+ /* Clear floats */
+ .row1:after {
+   content: "";
+   
+ }
+ 
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 900px) {
+   .column1 {
+     width: 50%;
+   }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column1 {
+     width: 100%;
+   }
+ }
+ .review-img{
+   width: 120px;
+   height: 70px;
+   margin: 2px;
+   padding: 2px; 
+   position: relative;
+    left: 3%;
+     top: 20px;
+ }
+ /*For review headings*/
+ .review-heading{
+   margin: 2px;
+   padding: 2px; 
+   position: relative;
+    left: -20%;
+    top: -40px;
+ }
+ /*For review para's*/
+ .review-para{
+   margin: 2px;
+   padding: 2px; 
+   position: relative;
+     right: -17%;
+    top: -40px;
+    text-align: center;
+    font-size: small;
+    width: 355px;
+ }
+ /*For our-skill section*/
+ .our-skill{
+   text-align: center;
+   background-color: white;
+   width:  99% ;
+   height: 377px;
+   margin: 2px;
+   padding: 2px;
+   
+ }
+ /*For our-skill img*/
+ .skill-img1{
+   display: flex;
+    
+   justify-content: center;
+     margin: 2px;
+     padding: 2px; 
+   position: absolute;
+    left: 25%;
+     top: 222px;
+  
+ }
+
+.skill-img {
+    width: 550px;
+    height: 120px;
+
+
+}
+ /*For START NEW PROJECT SECTION*/
+ .skill-project{
+    background-color: rgb(21, 239, 21);
+    color: white;
+    width: 100% ;
+    height: 150px;
+    margin: px;
+    padding: 2px;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+    position: relative;
+    top: 2px;
+}
+
+.skill-heading{
+   position: relative;
+    top: 2px;
+    
+   font: bolder;
+    
+   font-size: 2.2rem;
+}
+/*For Input fields*/
+#name,#email,#phone{
+    margin: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: small;
+
+}
+ .skill-btn{
+   background-color: goldenrod;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 4px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+ }
+ .skill-btn:hover,.skill-btn:active{
+   
+      color: white;
+      text-shadow: 1px;
+  
+ }
+ /*For Contact us section*/
+ .contact{ 
+   position: absolute;
+    left: 13%;
+    top: 235px ; 
+
+ }
+ /*For contact us email*/
+ .con-email{
+   display: flex;
+    
+   justify-content: flex-end;
+     position: relative;
+     top: -30px;
+     left: 290px;
+ }
+  .our-contact{
+    text-align: center;
+    background-color: white;
+    width:  99% ;
+    height: 180px;
+    margin: 2px;
+    padding: 2px;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+  }
+ /*For  footer*/
+ .footer{
+   background-color: white;
+     
+    width: 99%;
+    height: 250px;
+    margin: 2px;
+    padding: 2px;
+ 
+    display: flex;
+    box-shadow : 3px 3px 4px  rgba(76, 75, 75, 0.4) ;
+ }
+  .box1,.box2,.box3,.box4{
+ color:black;
+  margin: 5px;
+  padding: 3px;
+  width: 25%;
+  }
+   
+  /*For footer img*/
+  .footer-img{
+   width: 20px;
+   height: 20px;
+   display: flex;
+
+  }
+  .footor-con{
+    margin: 2px;
+    padding: 2px;
+
+  }
+  .footer-para{
+    
+    margin: 4px;
+    padding: 4px;
+     
+    width: 200px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+   
+  }
+  .copyright{
+     
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+    text-align: center;
+  }
+
+ .footer-heading{
+   position: relative;
+    top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+ 
+ }
+ .footer-links{
+    
+    
+    text-decoration: underline ;
+   margin: 2px;
+   padding: 2px;
+ }
+ 
+ .footer-heading1{
+   position: relative;
+   top: 5px;
+   font-size: 1.2rem;
+   font-weight: bold;
+    
+ }
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
